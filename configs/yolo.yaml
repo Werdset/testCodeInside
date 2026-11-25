@@ -1,0 +1,15 @@
+model: yolo11n.yaml
+epochs: 2
+imgsz: 320
+batch: 4
+device: cpu
+workers: 0
+seed: 42
+deterministic: true
+pretrained: false
+amp: false
+optimizer: AdamW
+lr0: 0.001
+plots: true
+save: true
+val: true
