@@ -88,6 +88,8 @@ def run(args):
         else:
             os.environ.setdefault('YOLO_CONFIG_DIR', str((args.runs / '.ultralytics').resolve()))
             os.environ.setdefault('MPLCONFIGDIR', str((args.runs / '.matplotlib').resolve()))
+            Path(os.environ['YOLO_CONFIG_DIR']).mkdir(parents=True, exist_ok=True)
+            Path(os.environ['MPLCONFIGDIR']).mkdir(parents=True, exist_ok=True)
             from ultralytics import YOLO, settings
             settings.update({'tensorboard': False, 'wandb': False, 'mlflow': False, 'comet': False})
             train_config = dict(config)

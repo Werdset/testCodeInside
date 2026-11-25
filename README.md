@@ -99,4 +99,6 @@ python -m pytest -q
 
 Полные датасеты, веса, обработанные копии, логи и секреты исключены из Git. Исходная мини-выборка и визуализации входят в репозиторий; реальные локальные логи находятся в `runs/`.
 
+Результат выполненного короткого запуска и проверки событий: `reports/experiment_report.md`.
+
 Справка по использованному API: [callbacks Ultralytics](https://docs.ultralytics.com/usage/callbacks/) и [параметры обучения](https://docs.ultralytics.com/modes/train/).
